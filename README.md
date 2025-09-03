@@ -85,8 +85,8 @@ NATOURS/
 ---
 
 ## 👨‍💻 Author
-Designed and Developed by Pir Ghazi
-📧 Email: [ghazipir1@gmail.com](ghazipir1@gmail.com)
+Designed and Developed by Pir Ghazi<br/>
+📧 Email: [ghazipir1@gmail.com](ghazipir1@gmail.com)<br/>
 🌐 Linkedin: [PIR GHAZI SHAH](https://linkedin.com/in/pir-ghazi-shah)
 
 
