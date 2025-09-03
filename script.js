@@ -1,3 +1,4 @@
+        // Toggle Menu
     const menubts = document.querySelector('.menu_bts');
         const navmenu = document.querySelector('.nav_links');
 
@@ -6,23 +7,36 @@
             navmenu.classList.toggle('moblie_menu');
         });
 
-        // ✅ Initialize EmailJS
-    (function(){
-        emailjs.init("YOUR_PUBLIC_KEY"); // 🔑 Replace with your actual public key from EmailJS
-    })();
+    // ✅ Initialize EmailJS
 
-    document.getElementById("contact-form").addEventListener("submit", function(e){
-        e.preventDefault();
 
-        emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
-            from_name: document.getElementById("name").value,
-            from_email: document.getElementById("email").value,
-            message: document.getElementById("message").value
+    // ✅ EmailJS Send Function
+function sendMail() {
+    let params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value
+    };
+
+
+    const serviceID = "service_ymp004l";
+    const templateID = "template_drhvb53";
+
+    emailjs.send(serviceID, templateID, params)
+        .then(res => {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("subject").value = "";
+            document.getElementById("message").value = "";
+            console.log(res);
+            alert("✅ Your Message is sent successfully!");
         })
-        .then(function(response) {
-            document.getElementById("statusMsg").innerText = "✅ Message sent successfully!";
-            document.getElementById("contact-form").reset();
-        }, function(error) {
-            document.getElementById("statusMsg").innerText = "❌ Failed to send message. Please try again.";
+        .catch(err => {
+        console.error("EmailJS Error:", err);
+        alert("❌ Failed to send message. Please try again.");
         });
-    });
+}
+
+
+        // https://www.youtube.com/watch?v=BgVjild0C9A This is a link of video form where you leran about Email.js...

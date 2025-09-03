@@ -309,6 +309,39 @@
             .content_col{width: 90%;text-align: center;}
             .content_col .cta{margin: 20px auto;}
             .content_col .line{margin: 10px auto;}
+            
+            /* 📌 Tablet Screens (≤1024px) */
+            @media (max-width:1024px){
+            .contact{padding:60px 15px;}
+            .contact .title h1{font-size:1.8rem;}
+            .contact .line{width:70px;height:3px;}
+            .contact-info{font-size:0.95rem;padding:12px 20px;margin-left:auto;margin-right:auto;}
+            #contact-form{max-width:500px;}
+            #contact-form input,#contact-form textarea{font-size:0.95rem;}
+            #contact-form button{font-size:1rem;padding:12px;}
+            }
+
+            /* 📌 Mobile Screens (≤768px) */
+            @media (max-width:768px){
+            .contact{padding:50px 15px;}
+            .contact .title h1{font-size:1.6rem;}
+            .contact-info{font-size:0.9rem;padding:10px 18px;text-align:center;}
+            .contact-info p{flex-direction:column;gap:5px;}
+            #contact-form{max-width:100%;padding:0 10px;}
+            #contact-form input,#contact-form textarea{font-size:0.9rem;padding:10px 12px;}
+            #contact-form button{font-size:1rem;padding:12px;}
+            }
+
+            /* 📌 Extra Small Screens (≤480px) */
+            @media (max-width:480px){
+            .contact{padding:40px 10px;}
+            .contact .title h1{font-size:1.4rem;}
+            .contact .line{width:60px;height:3px;}
+            .contact-info{width:100%;padding:10px;border-radius:10px;font-size:0.85rem;}
+            #contact-form input,#contact-form textarea{font-size:0.85rem;padding:8px 10px;}
+            #contact-form button{font-size:0.95rem;padding:10px;}
+            #statusMsg{font-size:0.85rem;}
+            }
 
             /* footer */
             footer{padding: auto;}
