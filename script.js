@@ -7,7 +7,8 @@
             navmenu.classList.toggle('moblie_menu');
         });
 
-    // ✅ Initialize EmailJS
+        // Date Upadate
+        document.getElementById('year').textContent = new Date().getFullYear();
 
 
     // ✅ EmailJS Send Function

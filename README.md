@@ -9,7 +9,6 @@ A modern, responsive tour booking website built with **HTML, CSS, and JavaScript
 ## 📸 Preview
 
 ![Natours Preview](./images/Screenshot%20.png)
-*(Replace with your favorite preview image if needed)*
 
 ---
 
